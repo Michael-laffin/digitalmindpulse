@@ -1,0 +1,99 @@
+body {
+  background-color: #2f3640; /* dark blue */
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #3498db; /* light blue */
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #455a64; /* dark purple */
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 10px #3498db;
+}
+
+.latest-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-cta {
+  background-color: #34c759; /* green */
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.recent-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.recent-posts .post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonials .testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonials .testimonial p {
+  font-size: 18px;
+  color: #666;
+}

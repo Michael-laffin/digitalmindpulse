@@ -1,0 +1,1 @@
+// empty seo config script
