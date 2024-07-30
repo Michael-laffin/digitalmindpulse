@@ -3,62 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Digital Mind Pulse - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1><a href="index.html">Digital Mind Pulse</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="podcasts.html">Podcasts</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section class="search-bar">
-            <input type="search" placeholder="Search...">
-            <button>Search</button>
+        <section class="hero">
+            <div class="container">
+                <h2>Explore the Digital Frontier</h2>
+                <p>Discover the latest trends in technology, AI, and digital innovation.</p>
+                <a href="#featured" class="cta-button">Get Started</a>
+            </div>
         </section>
-        <section class="latest-post">
-            <h2>Latest Post</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <section id="featured" class="featured-content">
+            <div class="container">
+                <h2>Featured Content</h2>
+                <div class="content-grid" id="featuredGrid">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
         </section>
+
         <section class="newsletter-cta">
-            <h2>Stay Updated!</h2>
-            <p>Subscribe to our newsletter to stay updated on the latest posts and resources.</p>
-            <button>Subscribe</button>
-        </section>
-        <section class="recent-posts">
-            <h2>Recent Posts</h2>
-            <div class="post">
-                <h3>Post 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="post">
-                <h3>Post 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="post">
-                <h3>Post 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </section>
-        <section class="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <img src="avatar.jpg" alt="Avatar">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="testimonial">
-                <img src="avatar.jpg" alt="Avatar">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest insights and updates.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Digital Mind Pulse. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
 </body>
 </html>
