@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>Digital Mind Pulse - Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <!-- page content -->
-</body>
-</html>
+    <header>
+        <!-- Same header as index.html, but with an additional "Admin" link -->
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Admin Panel</h2>
+            </div>
+        </section>
+
+        <section class="admin-panel">
+            <div class="container">
+                <div class="admin-menu">
+                    <button data-action="manage-articles">Manage Articles</button>
+                    <button data-action="manage-podcasts">Manage Podcasts</button>
+                    <button data-action="manage-videos">Manage Videos</button>
+                    <button data-action="manage-users">Manage Users</button>
+                    <button data-action="site-settings">Site Settings</button>
+                </div>
+                <div class="admin-content">
+                    <!-- Dynamic content will be loaded here based on the selected action -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
