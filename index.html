@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Mind Pulse - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>TechHub - Your Source for Tech News and Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1><a href="index.html">Digital Mind Pulse</a></h1>
+            <h1><a href="index.html">TechHub</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="articles.html">Articles</a></li>
                     <li><a href="podcasts.html">Podcasts</a></li>
                     <li><a href="videos.html">Videos</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -28,27 +28,25 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section id="hero">
             <div class="container">
-                <h2>Explore the Digital Frontier</h2>
-                <p>Discover the latest trends in technology, AI, and digital innovation.</p>
-                <a href="#featured" class="cta-button">Get Started</a>
+                <h2>Stay Ahead with the Latest in Tech</h2>
+                <p>Your one-stop destination for cutting-edge technology news, insights, and analysis.</p>
+                <a href="#featured" class="cta-button">Explore Now</a>
             </div>
         </section>
 
-        <section id="featured" class="featured-content">
+        <section id="featured">
             <div class="container">
                 <h2>Featured Content</h2>
-                <div class="content-grid" id="featuredGrid">
-                    <!-- Dynamic content will be loaded here -->
-                </div>
+                <div id="featuredGrid" class="content-grid"></div>
             </div>
         </section>
 
-        <section class="newsletter-cta">
+        <section id="newsletter">
             <div class="container">
                 <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter for the latest insights and updates.</p>
+                <p>Subscribe to our newsletter for the latest tech news and insights.</p>
                 <form id="newsletterForm">
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit">Subscribe</button>
@@ -59,13 +57,35 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Digital Mind Pulse. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About TechHub</h3>
+                    <p>TechHub is your premier source for technology news, insights, and analysis.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="podcasts.html">Podcasts</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechHub. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
