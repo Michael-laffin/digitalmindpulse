@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Mind Pulse - Articles</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Articles - TechHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- Same header as index.html -->
+        <!-- Same as index.html -->
     </header>
 
     <main>
-        <section class="page-header">
+        <section id="articles">
             <div class="container">
                 <h2>Articles</h2>
-            </div>
-        </section>
-
-        <section class="articles-grid">
-            <div class="container">
                 <div class="filter-sort">
                     <select id="categoryFilter">
                         <option value="">All Categories</option>
@@ -35,18 +30,14 @@
                         <option value="popular">Most Popular</option>
                     </select>
                 </div>
-                <div id="articlesGrid" class="content-grid">
-                    <!-- Dynamic content will be loaded here -->
-                </div>
-                <div class="pagination" id="articlesPagination">
-                    <!-- Pagination will be dynamically generated -->
-                </div>
+                <div id="articlesGrid" class="content-grid"></div>
+                <div id="articlesPagination" class="pagination"></div>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Same footer as index.html -->
+        <!-- Same as index.html -->
     </footer>
 
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
