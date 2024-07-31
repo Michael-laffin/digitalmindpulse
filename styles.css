@@ -1,99 +1,112 @@
+/* Updated styling for the website */
 body {
-  background-color: #2f3640; /* dark blue */
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #3498db; /* light blue */
-  padding: 20px;
-  text-align: center;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-  background-color: #455a64; /* dark purple */
-  padding: 10px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav li {
-  margin-right: 20px;
+header img {
+    height: 50px;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.search-bar {
-  width: 50%;
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.search-bar:focus {
-  outline: none;
-  box-shadow: 0 0 10px #3498db;
+main {
+    padding: 20px;
 }
 
-.latest-post {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
-.newsletter-cta {
-  background-color: #34c759; /* green */
-  padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
+/* Additional styles for specific sections */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.recent-posts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+.search-bar input, .search-bar button {
+    padding: 10px;
+    margin: 0 5px;
 }
 
-.recent-posts .post {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.featured-post img {
+    max-width: 100%;
+    margin: 10px 0;
 }
 
-.testimonials {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.newsletter input, .newsletter button {
+    padding: 10px;
+    margin: 10px 0;
 }
 
-.testimonials .testimonial {
-  margin-bottom: 20px;
+.recent-posts .post-grid, .popular-categories .category-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.testimonials .testimonial img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #1e1e1e;
 }
 
-.testimonials .testimonial p {
-  font-size: 18px;
-  color: #666;
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.blog-post img {
+    max-width: 100%;
+}
+
+.social-sharing a {
+    margin-right: 10px;
+}
+
+.comments h2, .related-posts h2 {
+    margin-top: 20px;
+}
+
+.author-bio img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
