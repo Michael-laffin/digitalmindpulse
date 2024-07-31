@@ -1,0 +1,54 @@
+/* Updated styling for the admin panel */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Additional styles for admin sections */
+.dashboard h1, .post-management h2, .comment-moderation h2, .user-management h2, .analytics h2 {
+    margin-top: 0;
+}
+
+.stats, .post-actions, .comment-actions, .user-actions, .analytics-reports {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+}
