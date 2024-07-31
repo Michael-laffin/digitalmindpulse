@@ -3,94 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechHub - Your Source for Tech News and Insights</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <title>Digital Mind Pulse</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="index.html">TechHub</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="podcasts.html">Podcasts</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+        <img src="images/logo.png" alt="Digital Mind Pulse Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="categories.html">Categories</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-
     <main>
-        <section id="hero">
-            <div class="container">
-                <h2>Stay Ahead with the Latest in Tech</h2>
-                <p>Your one-stop destination for cutting-edge technology news, insights, and analysis.</p>
-                <a href="#featured" class="cta-button">Explore Now</a>
+        <section class="hero">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+            <div class="featured-post">
+                <h2><a href="blog-post.html">Featured Post Title</a></h2>
+                <img src="images/featured-post.jpg" alt="Featured Post Image">
+                <p>Brief excerpt from the featured post...</p>
             </div>
         </section>
-
-        <section id="featured">
-            <div class="container">
-                <h2>Featured Content</h2>
-                <div id="featuredGrid" class="content-grid"></div>
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <input type="email" placeholder="Your email address">
+            <button>Subscribe</button>
+        </section>
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div class="post-grid">
+                <!-- Dynamically generated posts -->
             </div>
         </section>
-
-        <section id="newsletter">
-            <div class="container">
-                <h2>Stay Updated</h2>
-                <p>Subscribe to our newsletter for the latest tech news and insights.</p>
-                <form id="newsletterForm">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+        <section class="popular-categories">
+            <h2>Popular Categories</h2>
+            <div class="category-links">
+                <!-- Dynamically generated categories -->
             </div>
         </section>
+        <aside class="sidebar">
+            <div class="highlighted-posts">
+                <h3>Highlighted Posts</h3>
+                <!-- Dynamically generated posts -->
+            </div>
+            <div class="testimonials">
+                <h3>What Our Users Say</h3>
+                <!-- Dynamically generated testimonials -->
+            </div>
+        </aside>
     </main>
-
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>About TechHub</h3>
-                    <p>TechHub is your premier source for technology news, insights, and analysis.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="articles.html">Articles</a></li>
-                        <li><a href="podcasts.html">Podcasts</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 TechHub. All rights reserved.</p>
-            </div>
-        </div>
+        &copy; 2023 Digital Mind Pulse
     </footer>
-
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
