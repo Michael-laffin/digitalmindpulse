@@ -3,46 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Mind Pulse - Admin Panel</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="admin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Admin | Digital Mind Pulse</title>
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
     <header>
-        <!-- Same header as index.html, but with an additional "Admin" link -->
+        <img src="images/logo.png" alt="Digital Mind Pulse Logo">
+        <nav>
+            <a href="admin.html">Dashboard</a>
+            <a href="admin.html#posts">Manage Posts</a>
+            <a href="admin.html#comments">Moderate Comments</a>
+            <a href="admin.html#users">User Management</a>
+            <a href="admin.html#analytics">Analytics</a>
+        </nav>
     </header>
-
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h2>Admin Panel</h2>
+        <section class="dashboard">
+            <h1>Admin Dashboard</h1>
+            <div class="stats">
+                <!-- Dynamically generated site stats -->
             </div>
         </section>
-
-        <section class="admin-panel">
-            <div class="container">
-                <div class="admin-menu">
-                    <button data-action="manage-articles">Manage Articles</button>
-                    <button data-action="manage-podcasts">Manage Podcasts</button>
-                    <button data-action="manage-videos">Manage Videos</button>
-                    <button data-action="manage-users">Manage Users</button>
-                    <button data-action="site-settings">Site Settings</button>
-                </div>
-                <div class="admin-content">
-                    <!-- Dynamic content will be loaded here based on the selected action -->
-                </div>
+        <section class="post-management" id="posts">
+            <h2>Manage Posts</h2>
+            <div class="post-actions">
+                <!-- Post management actions -->
+            </div>
+        </section>
+        <section class="comment-moderation" id="comments">
+            <h2>Moderate Comments</h2>
+            <div class="comment-actions">
+                <!-- Comment moderation actions -->
+            </div>
+        </section>
+        <section class="user-management" id="users">
+            <h2>User Management</h2>
+            <div class="user-actions">
+                <!-- User management actions -->
+            </div>
+        </section>
+        <section class="analytics" id="analytics">
+            <h2>Detailed Analytics</h2>
+            <div class="analytics-reports">
+                <!-- Detailed analytics reports -->
             </div>
         </section>
     </main>
-
     <footer>
-        <!-- Same footer as index.html -->
+        &copy; 2023 Digital Mind Pulse
     </footer>
-
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <script src="script.js"></script>
-    <script src="admin.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
