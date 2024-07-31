@@ -3,37 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TechHub</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <title>Contact | Digital Mind Pulse</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <!-- Same as index.html -->
+        <img src="images/logo.png" alt="Digital Mind Pulse Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="categories.html">Categories</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-
     <main>
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>Have a question or feedback? We'd love to hear from you!</p>
-                <form id="contactForm">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="contact-details">
+            <h2>Contact Details</h2>
+            <p>Email: info@digitalmindpulse.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 Digital St, Tech City, 12345</p>
+        </section>
+        <section class="map">
+            <h2>Find Us</h2>
+            <div id="map"></div>
         </section>
     </main>
-
     <footer>
-        <!-- Same as index.html -->
+        &copy; 2023 Digital Mind Pulse
     </footer>
-
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
