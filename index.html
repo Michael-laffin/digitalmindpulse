@@ -4,7 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Mind Pulse</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Embedded CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Additional styles for specific sections */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input, .search-bar button {
+            padding: 10px;
+            margin: 0 5px;
+        }
+        .featured-post img {
+            max-width: 100%;
+            margin: 10px 0;
+        }
+        .newsletter input, .newsletter button {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .recent-posts .post-grid, .popular-categories .category-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -61,6 +132,25 @@
     <footer>
         &copy; 2023 Digital Mind Pulse
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+        // Embedded JavaScript
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('Page loaded');
+
+            // Example function to load recent posts dynamically
+            function loadRecentPosts() {
+                // Fetch recent posts from the server and insert into the DOM
+            }
+
+            // Example function to load popular categories dynamically
+            function loadPopularCategories() {
+                // Fetch popular categories from the server and insert into the DOM
+            }
+
+            // Call functions to load dynamic content
+            loadRecentPosts();
+            loadPopularCategories();
+        });
+    </script>
 </body>
 </html>
